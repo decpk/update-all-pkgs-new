@@ -1,0 +1,33 @@
+{
+  "name": "update-all-pkgs",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "A tool to update all packages with just a command",
+  "bin": "./bin/index.js",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "build": "npx tsc",
+    "start": "tsc && node bin/index.js"
+  },
+  "keywords": [
+    "update all",
+    "update all pkgs",
+    "update all packges",
+    "update-all-pkgs",
+    "update-all-packages"
+  ],
+  "author": "decpk",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
