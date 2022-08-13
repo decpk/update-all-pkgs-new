@@ -1,33 +1,37 @@
 {
-  "name": "update-all-pkgs",
-  "version": "0.0.1",
-  "type": "module",
-  "description": "A tool to update all packages with just a command",
-  "bin": "./bin/index.js",
+  "name": "@lsq-marvin-app-utility/update-pkgs",
+  "version": "1.0.110011",
+  "versionComments": "Do not change the version as it is a placeholder and will be replaced dynamically at build time",
+  "description": "",
+  "main": "bin/index.js",
+  "types": "bin/index.d.ts",
   "scripts": {
-    "lint": "eslint . --ext .ts",
-    "build": "npx tsc",
-    "start": "tsc && node bin/index.js"
+    "build": "webpack --config config/webpack.config.js",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint -c .eslintrc.js --ext .ts src",
+    "prepare": "npm run build"
   },
-  "keywords": [
-    "update all",
-    "update all pkgs",
-    "update all packges",
-    "update-all-pkgs",
-    "update-all-packages"
-  ],
-  "author": "decpk",
+  "author": "",
   "license": "ISC",
+  "homepage": "",
   "devDependencies": {
-    "@types/node": "^18.7.2",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
-    "eslint": "^8.21.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "typescript": "^4.7.4"
+    "eslint": "8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "ts-loader": "^9.3.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.7.4",
+    "webpack": "^5.32.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
   },
   "dependencies": {
     "chalk": "^4.1.2"
-  }
+  },
+  "files": [
+    "bin/**/*"
+  ]
 }
