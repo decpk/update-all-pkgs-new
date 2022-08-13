@@ -1,6 +1,6 @@
 {
-  "name": "@lsq-marvin-app-utility/update-pkgs",
-  "version": "1.0.110011",
+  "name": "update-all-pkgs",
+  "version": "1.0.1",
   "versionComments": "Do not change the version as it is a placeholder and will be replaced dynamically at build time",
   "description": "",
   "main": "bin/index.js",
