@@ -7,5 +7,5 @@ module.exports = {
   src: path.resolve(__dirname, '../src'),
 
   // Production build files
-  build: path.resolve(__dirname, '../bin'),
+  build: path.resolve(__dirname, '../build'),
 };

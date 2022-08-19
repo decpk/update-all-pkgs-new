@@ -1,4 +1,4 @@
-export default function sum(...arr: number[]) {
+export default function sum(...arr) {
   return arr.reduce((acc, curr) => {
     console.log(curr);
     return acc + curr;

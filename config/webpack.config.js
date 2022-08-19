@@ -1,26 +1,15 @@
 const paths = require("./paths");
 
 module.exports = {
-  entry: [paths.src + "/index.ts"],
-  mode:"production",
+  entry: [paths.src + '/index.js'],
+  mode: 'production',
   output: {
     path: paths.build,
-    filename: "index.js",
-    libraryTarget: "commonjs2",
+    filename: 'index.js',
+    libraryTarget: 'commonjs2',
   },
   resolve: {
-    extensions: ['.ts', '.js', '.json']
+    extensions: ['.js', '.json'],
   },
-  module: {
-    rules: [
-      {
-        test: /\.ts$/,
-        include: paths.src,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: "ts-loader",
-        },
-      },
-    ],
-  },
+  module: {},
 };
